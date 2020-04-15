@@ -1,3 +1,20 @@
+/*==================================
+        Table of Content
+        1. Body and Core Css
+        2. Preloader
+        3. Navbar
+        4. Banner Section
+        5. About Section
+        6. Skills Section
+        7. Portfolio Section
+        8. Contact Form Section
+        9. Footer
+        10. Mobile Responsive
+==================================*/
+
+
+/*============ 1. Body and Core Css ============*/
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -47,6 +64,280 @@ span {
   display: inline-block;
 }
 
+
+/*===========Margin And Paddings============*/
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mt-5 {
+  margin-top: 5px !important;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+.mt-15 {
+  margin-top: 15px !important;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+.mt-25 {
+  margin-top: 25px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.mt-35 {
+  margin-top: 35px !important;
+}
+.mt-40 {
+  margin-top: 40px !important;
+}
+.mt-45 {
+  margin-top: 45px !important;
+}
+.mt-50 {
+  margin-top: 50px !important;
+}
+.mt-55 {
+  margin-top: 55px !important;
+}
+.mt-60 {
+  margin-top: 60px !important;
+}
+.mt-62 {
+  margin-top: 62px !important;
+}
+.mt-65 {
+  margin-top: 65px !important;
+}
+.mt-70 {
+  margin-top: 70px !important;
+}
+.mt-75 {
+  margin-top: 75px !important;
+}
+.mt-80 {
+  margin-top: 80px !important;
+}
+.mt-85 {
+  margin-top: 85px !important;
+}
+.mt-90 {
+  margin-top: 90px !important;
+}
+.mt-95 {
+  margin-top: 95px !important;
+}
+.mt-100 {
+  margin-top: 100px !important;
+}
+/* Custom Margin Bottom */
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.mb-35 {
+  margin-bottom: 35px !important;
+}
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+.mb-45 {
+  margin-bottom: 45px !important;
+}
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+.mb-55 {
+  margin-bottom: 55px !important;
+}
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+.mb-62 {
+  margin-bottom: 62px !important;
+}
+.mb-65 {
+  margin-bottom: 65px !important;
+}
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+.mb-75 {
+  margin-bottom: 75px !important;
+}
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+.mb-85 {
+  margin-bottom: 85px !important;
+}
+.mb-90 {
+  margin-bottom: 90px !important;
+}
+.mb-95 {
+  margin-bottom: 95px !important;
+}
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+.m-0 {
+  margin: 0px !important;
+}
+/* Custom Padding top */
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pt-5 {
+  padding-top: 5px !important;
+}
+.pt-10 {
+  padding-top: 10px !important;
+}
+.pt-15 {
+  padding-top: 15px !important;
+}
+.pt-20 {
+  padding-top: 20px !important;
+}
+.pt-25 {
+  padding-top: 25px !important;
+}
+.pt-30 {
+  padding-top: 30px !important;
+}
+.pt-35 {
+  padding-top: 35px !important;
+}
+.pt-40 {
+  padding-top: 40px !important;
+}
+.pt-45 {
+  padding-top: 45px !important;
+}
+.pt-50 {
+  padding-top: 50px !important;
+}
+.pt-55 {
+  padding-top: 55px !important;
+}
+.pt-60 {
+  padding-top: 60px !important;
+}
+.pt-65 {
+  padding-top: 65px !important;
+}
+.pt-70 {
+  padding-top: 70px !important;
+}
+.pt-75 {
+  padding-top: 75px !important;
+}
+.pt-80 {
+  padding-top: 80px !important;
+}
+.pt-85 {
+  padding-top: 85px !important;
+}
+.pt-90 {
+  padding-top: 90px !important;
+}
+.pt-95 {
+  padding-top: 95px !important;
+}
+.pt-100 {
+  padding-top: 100px !important;
+}
+/* Custom Padding top */
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.pb-5 {
+  padding-bottom: 5px !important;
+}
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+.pb-15 {
+  padding-bottom: 15px !important;
+}
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+.pb-25 {
+  padding-bottom: 25px !important;
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+.pb-35 {
+  padding-bottom: 35px !important;
+}
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+.pb-45 {
+  padding-bottom: 45px !important;
+}
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+.pb-55 {
+  padding-bottom: 55px !important;
+}
+.pb-60 {
+  padding-bottom: 60px !important;
+}
+.pb-65 {
+  padding-bottom: 65px !important;
+}
+.pb-70 {
+  padding-bottom: 70px !important;
+}
+.pb-75 {
+  padding-bottom: 75px !important;
+}
+.pb-80 {
+  padding-bottom: 80px !important;
+}
+.pb-85 {
+  padding-bottom: 85px !important;
+}
+.pb-90 {
+  padding-bottom: 90px !important;
+}
+.pb-95 {
+  padding-bottom: 95px !important;
+}
+.pb-100 {
+  padding-bottom: 100px !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+
+
+/*===========Helpers Css============*/
+
 .heading {
   margin-bottom: 50px;
 }
@@ -62,6 +353,10 @@ span {
   font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.owl-theme .owl-dot span {
+  width: 20px !important;
 }
 
 .bg-gray {
@@ -115,6 +410,9 @@ blockquote {
   margin: 40px 0;
   font-weight: 500;
 }
+
+
+/*============ 2. Preloader  ============*/
 
 .preloader {
   position: fixed;
@@ -232,6 +530,9 @@ blockquote {
   }
 }
 
+
+/*============ 3. Navbar ============*/
+
 nav.navbar {
   position: absolute;
   width: 100%;
@@ -342,6 +643,9 @@ nav.fixed-top .nav-item .nav-link {
 nav.fixed-top .nav-item .nav-link:before {
   background-color: #000;
 }
+
+
+/*============ 4. Banner Section============*/
 
 .banner {
   width: 100%;
@@ -504,4 +808,139 @@ nav.fixed-top .nav-item .nav-link:before {
       -webkit-transform: translateY(-15px);
       transform: translateY(-15px);
   }
+}
+
+/*===Center Banner Captions===*/
+
+.banner-centered .banner-caption {
+  text-align: center;
+}
+
+.banner-centered .arrow {
+  padding-left: 0;
+  text-align: center;
+}
+
+/*============ 5. About Section ============*/
+
+section.about .about-img {
+  position: relative;
+}
+
+section.about .about-img:before {
+  content: "";
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  z-index: 0;
+}
+
+section.about .about-img img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+}
+
+section.about .about-content .about-heading {
+  margin-bottom: 20px;
+}
+
+section.about .about-content .about-heading h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section.about .about-content .about-heading span {
+  font-family: "Raleway", san-serif;
+  color: #222;
+  font-size: 19px;
+}
+
+section.about .about-content p {
+  line-height: 28px;
+}
+
+section.about .about-content .social-icons {
+  margin-top: 30px;
+}
+
+section.about .about-content .social-icons a {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #222;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #222;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: .2s all ease;
+  -o-transition: .2s all ease;
+  transition: .2s all ease;
+}
+
+section.about .about-content .social-icons a .fab {
+  color: #fff;
+  -webkit-transition: .2s all ease;
+  -o-transition: .2s all ease;
+  transition: .2s all ease;
+}
+
+section.about .about-content .social-icons a:hover {
+  border: 2px solid #222;
+  background: transparent;
+  line-height: 26px;
+}
+
+section.about .about-content .social-icons a:hover .fab {
+  color: #222;
+}
+
+section.about .about-content .about-button {
+  margin-top: 40px;
+}
+
+
+/*============ 6. Skills Section ============*/
+
+section.services .service-item {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section.services .service-item .icon {
+  color: #222;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  line-height: 78px;
+  font-size: 30px;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+section.services .service-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+section.services .service-item:hover .icon {
+  -webkit-box-shadow: 0 5px 30px #e3e3e3;
+  box-shadow: 0 5px 30px #e3e3e3;
+  border-color: #f2f2f2;
 }

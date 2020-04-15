@@ -1,40 +1,10 @@
-/************* Main Js File ************************
-    Template Name: Kalvin - Portfolio Template
-    Author: cosmos-themes
-    Version: 1.0
-    Copyright 2018
-****************************************/
 
-
-/*==================================
-
-        Table of Content
-
-        1. Window Load Function
-            a. Preloader Setup
-            b. Portfolio Isotope Setup
-        2. Document Ready Function
-            a. ScrollIt Setup
-            b. Navbar Scrolling Background
-            c. Stats Counter Setup
-            d. Navbar Close On Click Mobile Responsive
-            e. Stellar Setup
-            f. Magnific Popup Setup
-            g. Blog OwlCarousel Setup
-            h. Testimonial OwlCarousel Setup
-            i. Contact Form Setup
-
-==================================*/
-
-/*========Window Load Function========*/
 $(window).on("load", function() {
 
-    /*========Preloader Setup========*/
     setTimeout(function(){
         $('.preloader').addClass('loaded');
     }, 1000);
 
-    /*========Portfolio Isotope Setup========*/
     if ($(".portfolio-items").length) {
         var $elements = $(".portfolio-items");
         $elements.isotope();
@@ -55,14 +25,12 @@ $(window).on("load", function() {
 
 });
 
-/*========Document Ready Function========*/
 $(function() {
 
     "use strict";
     var wind = $(window);
 
 
-    //Home Section Height
     function homeHeight() {
         var homeSection = $('#home')
 
@@ -73,18 +41,18 @@ $(function() {
     homeHeight();
     wind.resize(homeHeight);
 
-    /*========ScrollIt Setup========*/
+   
     $.scrollIt({
-        upKey: 38, // key code to navigate to the next section
-        downKey: 40, // key code to navigate to the previous section
-        easing: 'swing', // the easing function for animation
-        scrollTime: 600, // how long (in ms) the animation takes
-        activeClass: 'active', // class given to the active nav element
-        onPageChange: null, // function(pageIndex) that is called when page is changed
-        topOffset: -15 // offste (in px) for fixed top navigation
+        upKey: 38, 
+        downKey: 40, 
+        easing: 'swing', 
+        scrollTime: 600, 
+        activeClass: 'active', 
+        onPageChange: null, 
+        topOffset: -15 
     });
 
-    /*========Navbar Scrolling Background========*/
+
     wind.on("scroll", function() {
         var bodyScroll = wind.scrollTop(),
             navbar = $(".navbar")
@@ -95,49 +63,14 @@ $(function() {
         }
     });
 
-    /*========Stats Counter Setup========*/
-    (function(){
-        if($("section.stats").length > 0) {
-            var a = 0;
-            $(window).on('scroll', function() {
-                var oTop = $('section.stats').offset().top - window.innerHeight;
-                if (a == 0 && $(window).scrollTop() > oTop) {
-                    $('section.stats .single-stat .counter').each(function() {
-                        var $this = $(this),
-                            countTo = $this.attr('data-count');
-                        $({
-                            countNum: $this.text()
-                        }).animate({
-                            countNum: countTo
-                        }, {
-                            duration: 2000,
-                            easing: 'swing',
-                            step: function() {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function() {
-                                $this.text(this.countNum);
-                            }
-                        });
-                    });
-                    a = 1;
-                }
-            });
-        }
-
-    })();
-
-    /*========Navbar Close On Click Mobile Responsive========*/
     $(".nav-item .nav-link").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
 
-     /*========Stellar Setup========*/
     wind.stellar({
         horizontalScrolling: false,
     })
 
-     /*========Magnific Popup Setup========*/
      $('.portfolio .link').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -146,9 +79,6 @@ $(function() {
         }
     });
 
-
-
-    /*========Contact Form Setup========*/
     $('#contact-form').on('submit', function(e) {
         e.preventDefault();
         var uri = $(this).attr('action');
