@@ -1249,3 +1249,90 @@ section.portfolio .portfolio-items .item .item-content:hover .item-overlay .icon
   box-shadow: none;
   border-color: #222;
 }
+
+/*============ 9. Footer  ============*/
+
+footer {
+  background: #222;
+}
+
+footer .contact-info h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer .contact-info p {
+  color: #fff;
+  font-size: 14px;
+}
+
+footer hr {
+  border-color: #333;
+}
+
+footer .copy {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/*============ 10. Mobile Responsive  ============*/
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0.9);
+  }
+
+  .navbar-collapse .nav-item {
+    padding: 0 !important;
+  }
+
+  .navbar-collapse .nav-item a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .fixed-top .navbar-collapse {
+    background-color: transparent;
+  }
+
+  .banner .banner-caption h1 {
+    font-size: 75px;
+  }
+
+  .banner .banner-caption p {
+    font-size: 21px;
+  }
+
+  section.about .about-img:before {
+    display: none;
+  }
+
+  section.about .about-content {
+    margin-top: 50px;
+  }
+
+  section.banner-blog .banner-caption h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner .banner-caption h1 {
+    font-size: 46px;
+  }
+
+  .banner .banner-caption p {
+    font-size: 17px;
+  }
+
+  .banner #home-svg {
+    height: 80px;
+  }
+
+  section.banner-blog .banner-caption h1 {
+    font-size: 32px;
+  }
+}
