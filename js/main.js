@@ -1,14 +1,13 @@
+$(window).on("load", function () {
 
-$(window).on("load", function() {
-
-    setTimeout(function(){
+    setTimeout(function () {
         $('.preloader').addClass('loaded');
     }, 1000);
 
     if ($(".portfolio-items").length) {
         var $elements = $(".portfolio-items");
         $elements.isotope();
-        $(".portfolio-filter ul li").on("click", function() {
+        $(".portfolio-filter ul li").on("click", function () {
             $(".portfolio-filter ul li").removeClass("sel-item");
             $(this).addClass("sel-item");
             var selector = $(this).attr("data-filter");
@@ -25,7 +24,7 @@ $(window).on("load", function() {
 
 });
 
-$(function() {
+$(function () {
 
     "use strict";
     var wind = $(window);
@@ -41,19 +40,19 @@ $(function() {
     homeHeight();
     wind.resize(homeHeight);
 
-   
+
     $.scrollIt({
-        upKey: 38, 
-        downKey: 40, 
-        easing: 'swing', 
-        scrollTime: 600, 
-        activeClass: 'active', 
-        onPageChange: null, 
-        topOffset: -15 
+        upKey: 38,
+        downKey: 40,
+        easing: 'swing',
+        scrollTime: 600,
+        activeClass: 'active',
+        onPageChange: null,
+        topOffset: -15
     });
 
 
-    wind.on("scroll", function() {
+    wind.on("scroll", function () {
         var bodyScroll = wind.scrollTop(),
             navbar = $(".navbar")
         if (bodyScroll > 300) {
@@ -71,15 +70,7 @@ $(function() {
         horizontalScrolling: false,
     })
 
-     $('.portfolio .link').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-
-    $('#contact-form').on('submit', function(e) {
+    $('#contact-form').on('submit', function (e) {
         e.preventDefault();
         var uri = $(this).attr('action');
         $('#form-submit').val('Wait...');
@@ -87,7 +78,7 @@ $(function() {
             email = $('#contact-email').val(),
             message = $('#contact-message').val();
         var required = 0;
-        $('.con-validate', this).each(function() {
+        $('.con-validate', this).each(function () {
             if ($(this).val() == '') {
                 $(this).addClass('con-error');
                 required += 1;
@@ -109,13 +100,13 @@ $(function() {
                     con_email: email,
                     con_message: message
                 },
-                success: function(data) {
+                success: function (data) {
                     $("#contact-form input, #contact-form textarea").val('');
                     $("#contact-submit.primary-button span").html('Done!');
                     $("#contact-submit.primary-button").addClass("ok");
                     showAlertBox('success', "Thank You! Your message has been sent.");
                 },
-                error: function(jqXHR, e) {
+                error: function (jqXHR, e) {
                     $('#contact-submit.primary-button span').html('Failed!');
                     showAlertBox('error', "There was a problem with your submission, please try again.");
                 }
@@ -124,7 +115,7 @@ $(function() {
             console.log("Validation Error");
         }
     })
-    $(".con-validate").keyup(function() {
+    $(".con-validate").keyup(function () {
         $(this).removeClass('con-error');
     });
 
